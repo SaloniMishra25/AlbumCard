@@ -1,7 +1,6 @@
 body {
   margin: 0;
-
-  background-color:#fff5f7;
+  background-color: #fff5f7;
   padding: 0px 20px;
   box-sizing: border-box;
 }
@@ -25,7 +24,7 @@ h1 {
 }
 
 .album-card {
-  background-color: #fffaf0 ;
+  background-color: #fffaf0;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -57,11 +56,6 @@ h1 {
 }
 
 
-
-
-
-
-/* ✅ Responsive Styling */
 @media (max-width: 1024px) {
   .album-card {
     width: 45%;
