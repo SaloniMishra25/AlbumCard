@@ -1,38 +1,79 @@
-.App {
+body {
+  margin: 0;
+
+  background-color:#fff5f7;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 3rem;
+  color: #d63384;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.album {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.album-card {
+  background-color: #fffaf0 ;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.album-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.album-card p {
+  margin: 8px 0;
+  font-weight: 600;
+  /* color: #333; */
+  color: #6c757d;
+}
+
+.album-card h3 {
+  color: #9c4271;
+  margin-top: 15px;
+}
+
+.album-card .icon {
+  margin-right: 8px;
+  color: #f06595;
+}
+
+
+
+
+
+
+/* ✅ Responsive Styling */
+@media (max-width: 1024px) {
+  .album-card {
+    width: 45%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+  .album-card {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 }
